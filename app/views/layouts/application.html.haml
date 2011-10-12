@@ -4,14 +4,14 @@
     = render "layouts/head", :stylesheet_partial => "layouts/stylesheets"
   
   %body{ :class => "#{controller.controller_name}" }
-    %header#header
+    %header
       = render "layouts/header"
-      
+
     #main{ :role => 'main' }
       = render "layouts/flashes"
       = yield
       
-    %footer#footer
+    %footer
       = render "layouts/footer"
         
     -# Javascript at the bottom for fast page loading
