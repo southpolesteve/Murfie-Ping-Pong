@@ -1,22 +1,29 @@
 source 'http://rubygems.org'
 
-gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
+gem 'rails', '3.1.0'
 gem 'pg'
-
-# Asset template engines
-gem 'sass'
-gem 'coffee-script'
-gem 'uglifier'
-
+gem 'heroku'
+gem 'heroku_san'
 gem 'jquery-rails'
+gem "haml", ">= 3.0.0"
+gem "haml-rails"
+gem 'pacecar'
+gem 'googlecharts'
+gem 'thin'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+group :assets do
+  gem 'sass-rails', "  ~> 3.1.0"
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier'
+  gem 'compass', "~> 0.12.alpha.0"
+end
 
-# Deploy with Capistrano
-# gem 'capistrano'
+group :development do
+  gem 'heroku_san'
+  gem 'pry'
+end
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
+group :development, :test do
+  gem "rspec-rails", ">= 2.0.1"
+  gem "capybara"
+end
