@@ -11,12 +11,13 @@ gem 'pacecar'
 gem 'googlecharts'
 gem 'thin'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :git => 'git://github.com/anjlab/bootstrap-rails.git'
+gem 'sass-rails', "  ~> 3.1.0"
 
 group :assets do
-  gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
   gem 'compass', "~> 0.12.alpha.0"
+  gem 'html5-boilerplate', :group => :production, :git => 'git://github.com/sporkd/compass-html5-boilerplate.git'
 end
 
 group :development do
