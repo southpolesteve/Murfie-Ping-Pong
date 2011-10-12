@@ -3,7 +3,6 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.1'
 gem 'pg'
 gem 'heroku'
-gem 'heroku_san'
 gem 'jquery-rails'
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
@@ -21,7 +20,7 @@ group :assets do
 end
 
 group :development do
-  gem 'heroku_san'
+  gem 'heroku_san', :git => 'git://github.com/ezkl/heroku_san.git'
   gem 'pry'
 end
 
