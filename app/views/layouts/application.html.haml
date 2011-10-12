@@ -7,12 +7,11 @@
     %header
       = render "layouts/header"
 
-    #main{ :role => 'main' }
+    .container#main{ :role => 'main' }
       = render "layouts/flashes"
       = yield
-      
-    %footer
-      = render "layouts/footer"
+      %footer
+        = render "layouts/footer"
         
     -# Javascript at the bottom for fast page loading
     = render "layouts/javascripts"
