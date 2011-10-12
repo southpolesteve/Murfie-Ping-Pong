@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/anjlab/bootstrap-rails.git
+  revision: ad5d0934f7824f0fd9829a2f9c07572d8e779e7d
+  specs:
+    anjlab-bootstrap-rails (0.1.4)
+      railties (~> 3.0)
+      thor (~> 0.14)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -189,6 +197,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  anjlab-bootstrap-rails!
   capybara
   coffee-rails (~> 3.1.0)
   compass (~> 0.12.alpha.0)

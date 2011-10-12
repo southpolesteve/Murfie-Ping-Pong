@@ -10,6 +10,7 @@ gem "haml-rails"
 gem 'pacecar'
 gem 'googlecharts'
 gem 'thin'
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :git => 'git://github.com/anjlab/bootstrap-rails.git'
 
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
