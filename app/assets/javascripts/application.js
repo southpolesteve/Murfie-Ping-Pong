@@ -6,4 +6,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//
+// Include all twitter's javascripts
+//= require bootstrap
+//
 //= require_tree .
