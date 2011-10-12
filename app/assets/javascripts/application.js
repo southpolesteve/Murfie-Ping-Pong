@@ -4,10 +4,15 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
+// ---Default Rails---
 //= require jquery
 //= require jquery_ujs
 //
-// Include all twitter's javascripts
+// ---Twitter Bootstrap---
 //= require bootstrap
 //
-//= require_tree .
+// ---HTML5 Boilerplate---
+//= require plugins
+//
+//= require_self
+

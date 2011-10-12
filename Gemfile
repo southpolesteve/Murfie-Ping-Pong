@@ -12,12 +12,12 @@ gem 'googlecharts'
 gem 'thin'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails', :git => 'git://github.com/anjlab/bootstrap-rails.git'
 gem 'sass-rails', "~> 3.1.0"
-gem "html5-boilerplate"
+gem 'html5-boilerplate', :git => 'git://github.com/sporkd/compass-html5-boilerplate.git'
+gem 'compass', "~> 0.12.alpha.0"
 
 group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
-  gem 'compass', "~> 0.12.alpha.0"
 end
 
 group :development do
