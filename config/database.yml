@@ -8,11 +8,11 @@ common: &COMMON
 
 development:
   <<: *COMMON
-  database: dormie_development
+  database: pingpong_development
 
 test: &TEST
   <<: *COMMON
-  database: dormie_test<%= ENV['TEST_ENV_NUMBER'] %>
+  database: pingpong_test<%= ENV['TEST_ENV_NUMBER'] %>
 
 cucumber:
   <<: *TEST

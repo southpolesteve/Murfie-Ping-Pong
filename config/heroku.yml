@@ -7,15 +7,7 @@
 #     - <Heroku config:var name>: <Heroku config:var value>
 #
 production: 
-  app: dormie
+  app: murfie-pingpong
   config:
     BUNDLE_WITHOUT: "development:test"
 
-staging:
-  app: dormie-staging
-  config: &default
-    BUNDLE_WITHOUT: "development:test"
-
-demo: 
-  app: dormie-demo
-  config: *default
