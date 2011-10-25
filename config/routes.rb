@@ -1,7 +1,7 @@
 Scratch::Application.routes.draw do
-  get "games/create"
+  resources :games, :only => [:create]
 
-  get "players/create"
+  resources :players, :only => [:create]
 
   root :to => 'content#home'
 end

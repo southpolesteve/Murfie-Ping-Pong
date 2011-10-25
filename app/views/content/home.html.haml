@@ -8,6 +8,9 @@
       = f.button :submit, :class => 'primary'
 
     %h2 Add a Player
+    = simple_form_for @player, :wrapper => "inline" do |f|
+      = f.input :name
+      = f.button :submit, :class => 'primary'
 
   .span8
     %h2 Rankings
