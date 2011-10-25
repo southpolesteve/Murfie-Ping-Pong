@@ -2,6 +2,10 @@
 .row
   .span8
     %h2 Add a Game
+    = simple_form_for @game, :wrapper => "inline" do |f|
+      = f.association :winner, :include_blank => false
+      = f.association :loser, :include_blank => false
+      = f.button :submit, :class => 'primary'
 
     %h2 Add a Player
 
