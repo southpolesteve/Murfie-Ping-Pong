@@ -79,6 +79,7 @@ GEM
       sass (~> 3.1)
     daemons (1.1.4)
     diff-lcs (1.1.3)
+    elo (0.1.0)
     erubis (2.7.0)
     eventmachine (0.12.10)
     execjs (1.2.9)
@@ -211,6 +212,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.1.0)
   compass (~> 0.12.alpha.0)
+  elo
   googlecharts
   haml (>= 3.0.0)
   haml-rails
