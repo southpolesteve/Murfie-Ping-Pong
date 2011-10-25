@@ -20,4 +20,9 @@ class Game < ActiveRecord::Base
     end
   end
 
+  def self.console_game(winner,loser)
+    game = Game.create(winner: winner, loser: loser)
+    game.update_rankings
+  end
+
 end
