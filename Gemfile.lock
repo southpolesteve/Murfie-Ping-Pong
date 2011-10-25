@@ -15,6 +15,14 @@ GIT
       rails (>= 2)
 
 GIT
+  remote: git://github.com/plataformatec/simple_form.git
+  revision: 5ea7d400146eb217b28fb5b0682c6ce27bf64c8c
+  specs:
+    simple_form (2.0.0.dev)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
+
+GIT
   remote: git://github.com/sporkd/compass-html5-boilerplate.git
   revision: 089ce4db61c2cb4e66638cd2c65f02002d5cfbb5
   specs:
@@ -226,5 +234,6 @@ DEPENDENCIES
   rails (= 3.1.1)
   rspec-rails (>= 2.0.1)
   sass-rails (~> 3.1.0)
+  simple_form!
   thin
   uglifier
