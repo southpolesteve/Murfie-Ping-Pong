@@ -1,4 +1,5 @@
-#flash
+#flashes
   - flash.each do |key, value|
-    .message{ :class => key }
+    .alert-message.fade.in( class="#{key}" data-alert="alert" )
+      %a.close{ :href=> "#" } ×
       %p= value

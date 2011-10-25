@@ -14,3 +14,19 @@
 
   .span8
     %h2 Rankings
+    %table
+      %thead
+        %tr
+          %th Rank
+          %th Name
+          %th Rating
+          %th Wins
+          %th Loses
+      %tbody
+        - @players.each_with_index do |player,index|
+          %tr
+            %td= index+1
+            %td= player.name
+            %td= player.rating
+            %td= player.wins.count
+            %td= player.losses.count

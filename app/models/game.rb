@@ -12,11 +12,11 @@ class Game < ActiveRecord::Base
     game.winner = winner
     self.winner.update_attribute(:rating, winner.rating)
     self.loser.update_attribute(:rating, loser.rating)
-    unless winner.pro == self.winner.pro
-      self.winner.update_attribute(:pro, winner.pro)
+    unless winner.pro? == self.winner.pro
+      self.winner.update_attribute(:pro, winner.pro?)
     end
-    unless loser.pro == self.loser.pro
-      self.loser.update_attribute(:pro, loser.pro)
+    unless loser.pro? == self.loser.pro
+      self.loser.update_attribute(:pro, loser.pro?)
     end
   end
 
